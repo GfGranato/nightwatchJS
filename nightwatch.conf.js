@@ -16,13 +16,13 @@ const geckodriver = require('geckodriver')
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: [],
+  src_folders: ['test/step_definitions'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: ['node_modules/nightwatch/examples/pages/'],
+  page_objects_path: ['lib/pages/'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
-  custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
+  custom_commands_path: ['lib/custom-commands/'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
   custom_assertions_path: '',
@@ -142,7 +142,7 @@ module.exports = {
     // to adapt this to your own project needs                                       |
     //////////////////////////////////////////////////////////////////////////////////
     'cucumber-js': {
-      src_folders: ['examples/cucumber-js/features/step_definitions'],
+      src_folders: ['step_definitions'],
 
       test_runner: {
         // set cucumber as the runner
@@ -151,7 +151,7 @@ module.exports = {
         // define cucumber specific options
         options: {
           //set the feature path
-          feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
+          feature_path: 'test/feature/*.feature',
 
           // start the webdriver session automatically (enabled by default)
           // auto_start_session: true

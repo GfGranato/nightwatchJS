@@ -1,7 +1,7 @@
 {
   "name": "nightwatchjs",
   "version": "1.0.0",
-  "description": "A project to start automarion with nighwatch",
+  "description": "A project to start automation with nightwatch",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/nightwatch"
@@ -14,7 +14,8 @@
   "author": "Guilherme Ferreira Granato",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "^107.0.5304",
+    "@cucumber/cucumber": "^9.1.0",
+    "chromedriver": "^111.0.0",
     "geckodriver": "^3.2.0",
     "nightwatch": "^2.6.19"
   }
