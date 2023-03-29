@@ -4,7 +4,7 @@
   "description": "A project to start automation with nightwatch",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch"
+    "test": "npx nightwatch --env cucumber-js"
   },
   "keywords": [
     "nightwatch",
@@ -15,8 +15,11 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^9.1.0",
-    "chromedriver": "^111.0.0",
     "geckodriver": "^3.2.0",
     "nightwatch": "^2.6.19"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chromedriver": "^111.0.0"
   }
 }
