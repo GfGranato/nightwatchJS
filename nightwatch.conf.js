@@ -16,7 +16,7 @@ const geckodriver = require('geckodriver')
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['test/step_definitions'],
+  src_folders: ['test/step_definitions/'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: ['lib/pages/'],
@@ -142,7 +142,7 @@ module.exports = {
     // to adapt this to your own project needs                                       |
     //////////////////////////////////////////////////////////////////////////////////
     'cucumber-js': {
-      src_folders: ['step_definitions'],
+      src_folders: ['test/step_definitions/'],
 
       test_runner: {
         // set cucumber as the runner
@@ -154,10 +154,10 @@ module.exports = {
           feature_path: 'test/feature/*.feature',
 
           // start the webdriver session automatically (enabled by default)
-          // auto_start_session: true
+          auto_start_session: true,
 
           // use parallel execution in Cucumber
-          // workers: 2 // set number of workers to use (can also be defined in the cli as --workers=2
+          workers: 2 // set number of workers to use (can also be defined in the cli as --workers=2
         }
       }
     },
