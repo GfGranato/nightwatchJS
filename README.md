@@ -36,6 +36,10 @@ The scenarios are located in the test/feature folder, while the steps are locate
 ## **Contributing**
 Please feel free to leave comments on my social media and email me to suggest improvements for this framework's performance and organization.
 
+## **License**
+Copyright © 2023 [Guilherme Granato](https://github.com/GfGranato) \
+This project is MIT licensed
+
 ## **Author**
 Guilherme Granato \
  [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/guilherme-granato/)
@@ -43,3 +47,4 @@ Guilherme Granato \
 
 ## **Acknowledgments**
 This little project helped me to learn more about testing frameworks, and feel free to use it in your own projects
+
