@@ -24,8 +24,8 @@ wich is defined at the [package.json](package.json) file or run the command:
 ```
 npx nightwatch --env cucumber-js 
 ```
-To select an specific browser, at [line 54 in nightwatch.conf.js](nightwatch.conf.js?plain=1#L54) write the desired browser like:
-- firefor
+To select an specific browser, at [line 54 in nightwatch.conf.js](nightwatch.conf.js?plain=1#L55) write the desired browser like:
+- firefox
 - chrome
 - edge
 
