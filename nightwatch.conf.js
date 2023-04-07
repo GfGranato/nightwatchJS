@@ -44,7 +44,6 @@ module.exports = {
     default: {
       disable_error_log: false,
       launch_url: 'https://nightwatchjs.org',
-
       screenshots: {
         enabled: false,
         path: 'screens',

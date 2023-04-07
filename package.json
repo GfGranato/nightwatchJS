@@ -19,7 +19,6 @@
     "nightwatch": "^2.6.19"
   },
   "dependencies": {
-    "chai": "^4.3.7",
     "chromedriver": "^111.0.0"
   }
 }
