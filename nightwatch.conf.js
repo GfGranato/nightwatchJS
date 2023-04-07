@@ -143,7 +143,7 @@ module.exports = {
     //////////////////////////////////////////////////////////////////////////////////
     'cucumber-js': {
       src_folders: ['test/step_definitions/'],
-
+      launch_url: 'https://www.cypress.io/',
       test_runner: {
         // set cucumber as the runner
         type: 'cucumber',
