@@ -1,15 +1,15 @@
 # **Nightwatch JS**
 
 This project seeks to automate your website using the [Nightwatch JS framework](https://nightwatchjs.org) and JavaScript.\
-For the automation I choose to use [Cucumber](https://cucumber.io) to documentate the Scenarios.\
-The main branch is the base of this project, while other branches will be used for specific tests.
+For the automation I choose to use [Cucumber](https://cucumber.io) to document the Scenarios.\
+The main branch contains the core functionality of the project, while other branches will be created for specific test cases.
 
 ## **Prerequisites**
 Google chrome or Mozilla Firefox installed
 
 ## **Installation**
-Check the version of your browser and use the same version at the code, to do so update the [chromedriver](package.json) or [geckodriver](package.json) at package.json.
-Then, execute the command:
+Check the version of your browser and make sure that it matches the version specified in the code,
+To do this, update the [chromedriver](package.json) or [geckodriver](package.json) in package.json as necessary. Then, execute the following command:
  ``` 
  npm install
  ``` 
@@ -31,15 +31,12 @@ To select an specific browser, at [line 54 in nightwatch.conf.js](nightwatch.con
 
 ## **Architecture**
 The architecture selected for the project is Page Object model.\
-In test/feature folder are the scenarios and in test/step_definitions are located the Steps.\
-in lib/pages are the Actions and mapped elements
-
+The scenarios are located in the test/feature folder, while the steps are located in the test/step_definitions folder. The actions and mapped elements are located in the lib/pages folder.
 ## **Testing**
-In this example, for Nightwatch I picked the Cypress website to automate, so my first scenario is validate the Landing page and a scenario outline to validate the footer.
-More scenarios will be added in the future.
+In this example, I chose to automate the Cypress website using Nightwatch. My first scenario is to validate the landing page, and a scenario outline is used to validate the footer. More scenarios will be added in the future
 
 ## **Contributing**
-Please, feel free to leave some comments at my social medias and email me to update this framework performance and organization.
+Please feel free to leave comments on my social media and email me to suggest improvements for this framework's performance and organization.
 
 ## **Author**
 Guilherme Granato \
@@ -47,4 +44,4 @@ Guilherme Granato \
  [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/GfGranato/)
 
 ## **Acknowledgments**
-This little project helped me to learn more about testing frameworks and feel free to use it at your projects.
+This little project helped me to learn more about testing frameworks, and feel free to use it in your own projects
