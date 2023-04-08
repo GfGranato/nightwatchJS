@@ -1,15 +1,15 @@
-# **Nightwatch JS**
+# cypress-automation
+### WIP
 
-This project seeks to automate your website using the [Nightwatch JS framework](https://nightwatchjs.org) and JavaScript.\
+This project seeks to automate your website using [Cypress](https://cypress.io) and JavaScript.\
 For the automation I choose to use [Cucumber](https://cucumber.io) to document the Scenarios.\
 The main branch contains the core functionality of the project, while other branches will be created for specific test cases.
 
 ## **Prerequisites**
-Google chrome or Mozilla Firefox installed
+Google Chrome, Mozilla Firefox or Edge browser Firefox installed
 
 ## **Installation**
-Check the version of your browser and make sure that it matches the version specified in the code,
-To do this, update the [chromedriver](package.json) or [geckodriver](package.json) in package.json as necessary. Then, execute the following command:
+The version of browser is automatically configured by cypress. So, execute the following command:
  ``` 
  npm install
  ``` 
@@ -18,20 +18,17 @@ To do this, update the [chromedriver](package.json) or [geckodriver](package.jso
 ## **How to Use**
 To execute the automation, you can run the command:
 ```
-npm test
+npm run cy:spec
 ```
-wich is defined at the [package.json](package.json) file or run the command:
+to execute all .feature files without opening the browser or
 ```
-npx nightwatch --env cucumber-js 
+npm run cy:open
 ```
-To select an specific browser, at [line 54 in nightwatch.conf.js](nightwatch.conf.js?plain=1#L55) write the desired browser like:
-- firefox
-- chrome
-- edge
+to open the cypress and look the automation runing
 
 ## **Architecture**
 The architecture selected for the project is Page Object model.\
-The scenarios are located in the test/feature folder, while the steps are located in the test/step_definitions folder. The actions and mapped elements are located in the lib/pages folder.
+The scenarios are located in the [cypress/e2e/features](cypress\e2e\features) folder, while the steps are located in the [cypress/support/step_definitions](cypress\support\step_definitions) folder. The mapped elements are located in the [cypress/support/mapping](cypress\support\mapping) folder.
 
 ## **Contributing**
 Please feel free to leave comments on my social media and email me to suggest improvements for this framework's performance and organization.
@@ -46,5 +43,5 @@ Guilherme Granato \
  [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/GfGranato/)
 
 ## **Acknowledgments**
-This little project helped me to learn more about testing frameworks, and feel free to use it in your own projects
-
+This project helped me to learn more about how to use cypress for E2E tests.
+Feel free to use it in your own projects
